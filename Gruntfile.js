@@ -253,7 +253,8 @@ module.exports = function (grunt) {
         assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
       },
       html: ['<%= config.dist %>/{,*/}*.html'],
-      css: ['<%= config.dist %>/styles/{,*/}*.css']
+      css: ['<%= config.dist %>/styles/{,*/}*.css'],
+      json: ['<%= config.dist %>/scripts/portfolio.json']
     },
 
     // The following *-min tasks produce minified files in the dist folder
@@ -282,9 +283,11 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
+          caseSensitive: true,
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
           conservativeCollapse: true,
+          keepClosingSlash: true,
           removeAttributeQuotes: true,
           removeCommentsFromCDATA: true,
           removeEmptyAttributes: true,
@@ -339,7 +342,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'scripts/portfolio.json'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',

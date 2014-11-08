@@ -1,0 +1,82 @@
+.site-about {
+  @extend %site-section;
+  display: flex;
+  align-items: center;
+  background: rgba($color-primary, .7);
+}
+
+.site-about p {
+  margin: 0;
+  padding: 1em 0;
+  color: $color-white;
+}
+
+.about-title {
+  margin: 0;
+  padding: 1em 0 .5em;
+  font-size: 3em;
+}
+
+.about-links {
+  padding: 50px 0;
+}
+
+.about-links a {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  padding: 5px 15px;
+  color: $color-white;
+  border-radius: 3px;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: none;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: all .2s $timing-material-design;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
+
+  &:before {
+    bottom: -5px;
+    right: -5px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    background: $color-white;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all .3s $timing-material-design;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    margin: 0 auto;
+    background: $color-white;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    color: rgba($color-primary, .7);
+
+    &:before {
+      transform: scale(15);
+    }
+  }
+}
+
+.about-links span {
+  position: relative;
+  z-index: 1;
+}

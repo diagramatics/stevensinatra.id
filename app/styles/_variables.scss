@@ -1,0 +1,34 @@
+$font-family-serif: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family: $font-family-serif;
+
+$g-container-size: 45em;
+$g-count: 12;
+
+// http://coolors.co/2b2823-f40924-ccd3cc-78976e-4e526d
+$color-red: #f40924;
+$color-black: #2b2823;
+$color-dark-blue: #4e526d;
+$color-grey: #ccd3cc;
+$color-green: #78976e;
+$color-white: #fff;
+$color-brand: $color-red;
+$color-primary: $color-brand;
+$color-secondary: $color-dark-blue;
+$color-accent-1: $color-grey;
+$color-accent-2: $color-green;
+
+$color-text: $color-black;
+
+$color-background: #fafafa;
+
+$section-min-height: 500px;
+$section-height: 100vh;
+$section-height-fallback: $section-min-height;
+$intro-height: 99vh;
+
+$site-title-padding: 20px;
+
+$timing-cubic-bezier-1: cubic-bezier(.4,0,.2,1);
+$timing-material-design: $timing-cubic-bezier-1;
+
+$z-nav: 10000;

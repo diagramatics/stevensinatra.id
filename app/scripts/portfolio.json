@@ -1,0 +1,42 @@
+{
+  "options": {
+    "projects": {
+      "wip": 5
+    }
+  },
+
+  "items": {
+    "pssi": {
+      "name": "PSSI New Redesign",
+      "desc": "A conversion from a Photoshop design by <a href='http://majuter.us'>Leo Ari Wibowo</a>.",
+      "url": "http://projects.diagramatics.me/pssi",
+      "imageUrl": "/images/projects/pssi.png",
+      "status": "unfinished",
+      "type": ["front-end", "conversion"]
+    },
+    "cnc": {
+      "name": "Coffee and Chocolate",
+      "desc": "A quick project showcasing parallax capabilities.",
+      "url": "http://projects.diagramatics.me/cnc",
+      "imageUrl": "/images/projects/cnc.png",
+      "status": "finished",
+      "type": ["front-end", "ui"]
+    },
+    "fairfax-domain-analysis": {
+      "name": "domain.com.au Redesign Analysis",
+      "desc": "A short article analysing the new frontpage design of Fairfax Media's product.",
+      "url": "http://projects.diagramatics.me/fairfax-domain-analysis",
+      "imageUrl": "/images/projects/fairfax-domain-analysis.png",
+      "status": "finished",
+      "type": ["featured", "ui", "article"]
+    },
+    "Ojegowes": {
+      "name": "Ojegowes",
+      "desc": "A mockup project to introduce a traditional transportation ride-sharing system in Indonesia.",
+      "url": "#",
+      "imageUrl": "/images/projects/ojegowes.png",
+      "status": "wip",
+      "type": ["front-end", "ui"]
+    }
+  }
+}

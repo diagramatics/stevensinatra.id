@@ -1,0 +1,224 @@
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15px 0;
+  z-index: $z-nav;
+  color: $color-secondary;
+  font-size: .9em;
+  font-weight: 700;
+  text-align: right;
+  transform: translateZ(0);
+  transition: opacity .3s $timing-material-design;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.nav-logo {
+  display: none;
+  height: 30px;
+  margin-left: 15px;
+  opacity: 0;
+  fill: $color-secondary;
+  transition: all .3s $timing-material-design;
+
+  .is-after-header-logo & {
+    opacity: 1;
+  }
+
+  .nav-logo-link:hover & {
+    fill: $color-primary;
+  }
+
+  @media only screen and (min-width: 500px) {
+    display: block;
+  }
+}
+
+.nav-logo-link {
+  display: flex;
+}
+
+.nav-list {
+  display: inline-block;
+  flex-grow: 100;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+
+.nav-item a {
+  display: block;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  transition: all .2s $timing-material-design;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    left: 10%;
+    height: 2px;
+    margin-bottom: .1em;
+    opacity: 0;
+    background: $color-secondary;
+    transform: scaleX(0);
+    transition: all .2s $timing-material-design;
+  }
+
+  &:hover:before {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.nav-item--emphasis a {
+  padding: 5px 15px;
+  border: 2px solid $color-secondary;
+  border-radius: 3px;
+  overflow: hidden;
+
+  &:before {
+    top: -5px;
+    right: -5px;
+    bottom: auto;
+    left: auto;
+    width: 10px;
+    height: 10px;
+    background: $color-secondary;
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(0);
+    transition: all .3s $timing-material-design;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $color-accent-1;
+
+    &:before {
+      transform: scale(20);
+    }
+  }
+}
+
+.nav-item--blog a {
+  &:after {
+    content: "Coming soon!";
+    position: absolute;
+    top: 100%;
+    right: -20px;
+    left: -20px;
+    margin-top: 2px;
+    opacity: 0;
+    font-size: .7em;
+    text-align: center;
+    transform: translateY(-5px);
+    transition: all .3s $timing-material-design;
+  }
+
+  &:hover:after,
+  &.touch:after {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &.touch:before {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.site-nav.is-opaque {
+  background: rgba($color-accent-1, .95);
+}
+
+// When inside portfolio
+.site-nav.is-in-portfolio {
+  //padding: 5px 0;
+  //color: $color-accent-1;
+
+  .nav-logo {
+    //fill: $color-accent-1;
+  }
+
+  // .nav-item--emphasis a {
+  //   border-color: $color-accent-1;
+  //   text-shadow: none;
+  //
+  //   &:before {
+  //     background: $color-accent-1;
+  //   }
+  //
+  //   &:hover {
+  //     color: $color-secondary;
+  //   }
+  // }
+
+  .nav-item--portfolio a {
+    &:before {
+      opacity: 1;
+      transform: scaleX(.15);
+    }
+
+    // TODO: This is later once I get every portfolio items listed
+    // &:after {
+    //   content: "View all";
+    //   position: absolute;
+    //   top: 100%;
+    //   right: 0;
+    //   left: 0;
+    //   margin-top: 2px;
+    //   opacity: 0;
+    //   font-size: .7em;
+    //   text-align: center;
+    //   transform: translateY(-5px);
+    //   transition: all .3s $timing-material-design;
+    // }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+
+      &:after {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.site-nav.is-in-about {
+  .nav-item--about a {
+    &:before {
+      opacity: 1;
+      transform: scaleX(.15);
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+
+      &:after {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}

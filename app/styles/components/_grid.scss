@@ -1,0 +1,22 @@
+.container,
+.container-fluid {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  max-width: $g-container-size;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.container--flexbox {
+  margin: 0;
+}
+
+@for $i from 1 to $g-count {
+
+}

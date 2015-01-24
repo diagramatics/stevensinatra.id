@@ -1,7 +1,7 @@
 {
   "options": {
     "projects": {
-      "wip": 5
+      "wip": 4
     }
   },
 
@@ -16,7 +16,7 @@
     },
     "cnc": {
       "name": "Coffee and Chocolate",
-      "desc": "A quick project showcasing parallax capabilities.",
+      "desc": "A quick project showcasing parallax capabilities for a college assignment.",
       "url": "http://projects.diagramatics.me/cnc",
       "imageUrl": "/images/projects/cnc.png",
       "status": "finished",
@@ -30,13 +30,29 @@
       "status": "finished",
       "type": ["featured", "ui", "article"]
     },
-    "Ojegowes": {
+    "ojegowes": {
       "name": "Ojegowes",
       "desc": "A mockup project to introduce a traditional transportation ride-sharing system in Indonesia.",
       "url": "#",
       "imageUrl": "/images/projects/ojegowes.png",
       "status": "wip",
       "type": ["front-end", "ui"]
+    },
+    "shelves": {
+      "name": "Shelves",
+      "desc": "An e-commerce site powered with PHP for a team college assignment. No major frameworks apart from jQuery and Sass.",
+      "url": "http://github.com/diagramatics/shelves",
+      "imageUrl": "/images/projects/shelves.png",
+      "status": "wip",
+      "type": ["back-end", "front-end", "ui", "college"]
+    },
+    "drinkthru": {
+      "name": "DrinkThru",
+      "desc": "An Android application for a college assignment. A first attempt at Android Development, also tackling Material Design.",
+      "url": "#",
+      "imageUrl": "/images/projects/drinkthru.png",
+      "status": "wip",
+      "type": ["android", "college"]
     }
   }
 }

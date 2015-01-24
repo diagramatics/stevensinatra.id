@@ -274,9 +274,9 @@ watchers.headerLogo.enterViewport ->
 
 
 # Touch :hover adaptations
-$('.nav-item--blog a').click ->
-  $(this).addClass 'touch'
-  t = this
-  window.setTimeout ->
-    $(t).removeClass 'touch'
-  , 3000
+# $('.nav-item--blog a').click ->
+#   $(this).addClass 'touch'
+#   t = this
+#   window.setTimeout ->
+#     $(t).removeClass 'touch'
+#   , 3000

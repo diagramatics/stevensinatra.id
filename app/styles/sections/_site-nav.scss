@@ -115,30 +115,30 @@
 }
 
 .nav-item--blog a {
-  &:after {
-    content: "Coming soon!";
-    position: absolute;
-    top: 100%;
-    right: -20px;
-    left: -20px;
-    margin-top: 2px;
-    opacity: 0;
-    font-size: .7em;
-    text-align: center;
-    transform: translateY(-5px);
-    transition: all .3s $timing-material-design;
-  }
-
-  &:hover:after,
-  &.touch:after {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  &.touch:before {
-    opacity: 1;
-    transform: scaleX(1);
-  }
+  // &:after {
+  //   content: "Coming soon!";
+  //   position: absolute;
+  //   top: 100%;
+  //   right: -20px;
+  //   left: -20px;
+  //   margin-top: 2px;
+  //   opacity: 0;
+  //   font-size: .7em;
+  //   text-align: center;
+  //   transform: translateY(-5px);
+  //   transition: all .3s $timing-material-design;
+  // }
+  //
+  // &:hover:after,
+  // &.touch:after {
+  //   transform: translateY(0);
+  //   opacity: 1;
+  // }
+  //
+  // &.touch:before {
+  //   opacity: 1;
+  //   transform: scaleX(1);
+  // }
 }
 
 .site-nav.is-opaque {

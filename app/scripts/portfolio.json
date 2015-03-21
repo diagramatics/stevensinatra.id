@@ -43,7 +43,7 @@
       "desc": "An e-commerce site powered with PHP for a team college assignment. No major frameworks apart from jQuery and Sass.",
       "url": "http://github.com/diagramatics/shelves",
       "imageUrl": "/images/projects/shelves.png",
-      "status": "wip",
+      "status": "finished",
       "type": ["back-end", "front-end", "ui", "college"]
     },
     "drinkthru": {

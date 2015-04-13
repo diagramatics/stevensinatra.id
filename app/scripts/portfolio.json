@@ -44,7 +44,7 @@
       "url": "http://github.com/diagramatics/shelves",
       "imageUrl": "/images/projects/shelves.png",
       "status": "finished",
-      "type": ["back-end", "front-end", "ui", "college"]
+      "type": ["featured", "back-end", "front-end", "ui", "college"]
     },
     "drinkthru": {
       "name": "DrinkThru",

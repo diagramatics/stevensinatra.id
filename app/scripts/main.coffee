@@ -56,7 +56,7 @@ Finch.route '/about', ->
 Finch.route '/cv', ->
   # There's no local copy for now, redirect to LinkedIn
   # TODO: After making a local browser design, of course replace this
-  window.location.replace 'https://lnkd.in/bGZhCiJ'
+  window.location.replace 'http://cv.diagramatics.me'
 
 Finch.route '/intro', ->
   Finch.navigate '/'

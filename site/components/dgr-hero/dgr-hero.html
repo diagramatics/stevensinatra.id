@@ -1,0 +1,54 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="dgr-hero">
+  <template>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+      }
+
+      .name {
+        margin-bottom: 0;
+        font-size: 5rem;
+      }
+    </style>
+    <div class="container">
+      <h1 class="name">Steven Sinatra</h1>
+      <p>[[jobTitle]]</p>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'dgr-hero',
+      properties: {
+        jobTitle: String
+      },
+      ready: function() {
+        const jobTitles = [
+          'A front-end web developer.',
+          'Previously a designer.'
+        ];
+
+        this.jobTitle = jobTitles[0];
+
+        var iterateJobTitle = (iterator) => {
+          setTimeout(() => {
+            this.jobTitle = jobTitles[iterator];
+            if (iterator + 1 >= jobTitles.length) {
+              iterateJobTitle(0);
+            } else {
+              iterateJobTitle(iterator + 1);
+            }
+          }, 2000);
+        };
+
+        iterateJobTitle(1);
+      }
+    });
+  </script>
+</dom-module>

@@ -1,0 +1,22 @@
+{
+  "name": "diagramatics-me",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Steven Sinatra <ohai@diagramatics.me>"
+  ],
+  "license": "MIT",
+  "homepage": "https://diagramatics.me",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "normalize-css": "necolas/normalize.css#^4.1.1"
+  }
+}

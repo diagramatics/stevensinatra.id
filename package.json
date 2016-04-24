@@ -1,0 +1,15 @@
+{
+  "name": "diagramatics-me",
+  "private": "true",
+  "scripts": {
+    "develop": "gulp watch"
+  },
+  "engines": {
+    "node": ">=4",
+    "npm": ">=3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "github:gulpjs/gulp#4.0"
+  }
+}

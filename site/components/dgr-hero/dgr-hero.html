@@ -1,4 +1,7 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../shared-styles.html">
+
+<style is="custom-style" include="shared-styles"></style>
 
 <dom-module id="dgr-hero">
   <template>
@@ -9,16 +12,22 @@
         align-items: center;
         flex-direction: column;
         height: 90vh;
+        background: var(--primary-color);
+        color: #fff;
       }
 
       .name {
         margin-bottom: 0;
         font-size: 5rem;
       }
+
+      .job-title {
+        margin: .2rem 0;
+      }
     </style>
     <div class="container">
       <h1 class="name">Steven Sinatra</h1>
-      <p>[[jobTitle]]</p>
+      <p class="job-title">[[jobTitle]]</p>
     </div>
   </template>
 

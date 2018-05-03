@@ -3,10 +3,8 @@
   "private": true,
   "dependencies": {
     "jquery": "~1.11.1",
-    "modernizr": "~2.8.2",
     "normalize.css": "~3.0.2",
     "velocity": "~1.1.0",
-    "scrollMonitor": "~1.0.10",
-    "finchjs": "~0.5.14"
+    "scrollMonitor": "~1.0.10"
   }
 }

@@ -1,5 +1,8 @@
 {
   "name": "stevensinatra.id",
-  "type": "static",
-  "alias": ["diagramatics.me"]
+  "alias": ["diagramatics.me"],
+  "version": 2,
+  "builds": [
+    { "src": "*", "use": "@now/static" }
+  ]
 }

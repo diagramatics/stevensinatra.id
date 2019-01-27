@@ -1,0 +1,15 @@
+{
+  "name": "stevensinatra.id/redirect",
+  "version": 2,
+  "alias": ["www.stevensinatra.id", "stevensinatra.id", "www.diagramatics.me"],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": {
+        "Location": "https://diagramatics.me/$1"
+      }
+    }
+  ]
+
+}

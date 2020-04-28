@@ -1,9 +1,10 @@
 {
   "name": "diagramatics-me",
+  "license": "MIT",
   "scripts": {
     "postinstall": "bower install",
     "build": "grunt build",
-    "deploy": "npm run build && cp ./now.json ./dist && cd dist && now && now alias"
+    "deploy": "npm run build && now dist"
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
@@ -35,6 +36,6 @@
     "time-grunt": "^0.4.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=12"
   }
 }

@@ -51,25 +51,3 @@ class Addon
     this.changeText()
 
 addon = new Addon
-
-# Scroll watchers
-
-navOuterHeight = $('#nav').outerHeight()
-
-watchers = {}
-
-watchers.intro = scrollMonitor.create $('#intro'), { bottom: -100 }
-watchers.intro.enterViewport ->
-  $('#nav').removeClass('is-opaque')
-  addon.activate()
-
-watchers.intro.exitViewport ->
-  $('#nav').addClass('is-opaque')
-  addon.deactivate()
-
-watchers.headerLogo = scrollMonitor.create $('#headerLogo')
-watchers.headerLogo.exitViewport ->
-  $('#nav').addClass('is-after-header-logo')
-watchers.headerLogo.enterViewport ->
-  $('#nav').removeClass('is-after-header-logo')
-

@@ -13,7 +13,7 @@
   font-weight: 700;
   text-align: right;
   transform: translateZ(0);
-  transition: opacity .3s $timing-material-design;
+  transition: opacity .3s $timing-function-default;
 
   &.is-hidden {
     opacity: 0;
@@ -27,7 +27,7 @@
   margin-left: 15px;
   opacity: 0;
   fill: $color-secondary;
-  transition: all .3s $timing-material-design;
+  transition: all .3s $timing-function-default;
 
   .is-after-header-logo & {
     opacity: 1;
@@ -62,7 +62,7 @@
   position: relative;
   color: inherit;
   text-decoration: none;
-  transition: all .2s $timing-material-design;
+  transition: all .2s $timing-function-default;
 
   &:before {
     content: "";
@@ -75,7 +75,7 @@
     opacity: 0;
     background: $color-secondary;
     transform: scaleX(0);
-    transition: all .2s $timing-material-design;
+    transition: all .2s $timing-function-default;
   }
 
   &:hover:before {
@@ -101,7 +101,7 @@
     border-radius: 50%;
     opacity: 1;
     transform: scale(0);
-    transition: all .3s $timing-material-design;
+    transition: all .3s $timing-function-default;
     z-index: -1;
   }
 
@@ -126,7 +126,7 @@
   //   font-size: .7em;
   //   text-align: center;
   //   transform: translateY(-5px);
-  //   transition: all .3s $timing-material-design;
+  //   transition: all .3s $timing-function-default;
   // }
   //
   // &:hover:after,
@@ -185,7 +185,7 @@
     //   font-size: .7em;
     //   text-align: center;
     //   transform: translateY(-5px);
-    //   transition: all .3s $timing-material-design;
+    //   transition: all .3s $timing-function-default;
     // }
 
     &:hover {

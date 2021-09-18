@@ -1,0 +1,13 @@
+---
+const { title } = Astro.props;
+---
+<style>
+  .title {
+    page-break-after: avoid;
+  }
+</style>
+
+<section>
+  <h2 class="title">{title}</h2>
+  <slot />
+</section>

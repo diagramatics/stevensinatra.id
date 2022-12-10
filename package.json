@@ -8,13 +8,17 @@
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.20.7",
+    "astro": "^1.6.14",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "sass": "^1.56.2"
   },
   "engines": {
     "node": ">=14.x"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^1.0.0"
   }
 }

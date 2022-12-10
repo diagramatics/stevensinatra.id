@@ -1,22 +1,21 @@
 ---
 import Section from './section.astro';
-import Social from './social.astro';
 ---
 
 <Section>
   <div class="site-intro">
     <div class="site-header-content container container--flexbox">
-      <svg id="headerLogo" class="site-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.88 160.8">
-        <use xlink:href="#svg-logo" />
-      </svg>
       <h1 class="site-title">Steven Sinatra</h1>
-      <div class="site-tagline">A front-end engineer, Indonesian and Sydneysider. <br /> Currently leading company wide web performance efforts at <a href="https://www.canva.com">Canva</a>.</div>
-      <Social />
+      <div class="site-tagline">
+        Engineering manager, front-end engineer, Indonesian and Sydneysider.
+        <br />
+        Currently Head of Web Performance, Engineering Manager at <a href="https://www.canva.com">Canva</a>.
+      </div>
     </div>
   </div>
 </Section>
 
-<style lang="scss">
+<style>
   .site-intro {
     display: flex;
     align-items: center;
@@ -25,10 +24,10 @@ import Social from './social.astro';
     min-height: var(--intro-height);
     color: var(--color-text);
     text-align: center;
+  }
 
-    *::selection {
-      background: var(--color-white);
-    }
+  .site-intro::selection {
+    background: var(--color-white);
   }
 
   .site-logo {

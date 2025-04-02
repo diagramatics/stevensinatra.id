@@ -5,14 +5,19 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "lint": "eslint --fix",
+    "format": "prettier --write ."
   },
   "devDependencies": {
-    "astro": "^0.20.7",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.23.0",
+    "astro": "^5.5.6",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3"
   },
   "engines": {
     "node": ">=22.x"

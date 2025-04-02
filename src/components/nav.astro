@@ -1,132 +1,15 @@
-<nav id="nav" class="site-nav">
-  <a href="/#/intro" class="nav-logo-link">
-    <svg class="nav-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326.88 160.8">
-      <use xlink:href="#svg-logo" />
-    </svg>
-  </a>
-  <div class="nav-list">
-    <div class="nav-item"><a href="/resume">Résumé</a></div>
+<nav
+  id="nav"
+  class="fixed top-0 right-0 left-0 flex items-center justify-end py-4 z-[var(--z-nav)] text-[var(--color-secondary)] text-[0.9em] font-bold text-right translate-z-0 transition-opacity duration-300 [transition-timing-function:var(--timing-function-default)] is-hidden:opacity-0 is-hidden:pointer-events-none"
+>
+  <div class="inline-block flex-grow">
+    <div class="inline-block mx-4 align-middle">
+      <a
+        href="/resume"
+        class="block relative text-inherit no-underline transition-all duration-200 [transition-timing-function:var(--timing-function-default)] before:content-[''] before:absolute before:right-[10%] before:bottom-0 before:left-[10%] before:h-[2px] before:mb-[-0.1em] before:opacity-0 before:bg-[var(--color-secondary)] before:scale-x-0 before:transition-all before:duration-200 [before:transition-timing-function:var(--timing-function-default)] hover:before:opacity-100 hover:before:scale-x-100"
+      >
+        Résumé
+      </a>
+    </div>
   </div>
 </nav>
-
-<style lang="scss">
-  .site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    padding: 15px 0;
-    z-index: var(--z-nav);
-    color: var(--color-secondary);
-    font-size: .9em;
-    font-weight: 700;
-    text-align: right;
-    transform: translateZ(0);
-    transition: opacity .3s var(--timing-function-default);
-
-    &.is-hidden {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
-
-  .nav-logo {
-    display: none;
-    height: 30px;
-    margin-left: 15px;
-    opacity: 0;
-    fill: var(--color-secondary);
-    transition: all .3s var(--timing-function-default);
-
-    .is-after-header-logo & {
-      opacity: 1;
-    }
-
-    .nav-logo-link:hover & {
-      fill: var(--color-primary);
-    }
-
-    @media only screen and (min-width: 500px) {
-      display: block;
-    }
-  }
-
-  .nav-logo-link {
-    display: flex;
-  }
-
-  .nav-list {
-    display: inline-block;
-    flex-grow: 100;
-  }
-
-  .nav-item {
-    display: inline-block;
-    margin: 0 15px;
-    vertical-align: middle;
-  }
-
-  .nav-item a {
-    display: block;
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-    transition: all .2s var(--timing-function-default);
-
-    &:before {
-      content: "";
-      position: absolute;
-      right: 10%;
-      bottom: 0;
-      left: 10%;
-      height: 2px;
-      margin-bottom: -0.1em;
-      opacity: 0;
-      background: var(--color-secondary);
-      transform: scaleX(0);
-      transition: all .2s var(--timing-function-default);
-    }
-
-    &:hover:before {
-      opacity: 1;
-      transform: scaleX(1);
-    }
-  }
-
-  .nav-item--emphasis a {
-    padding: 5px 15px;
-    border: 2px solid var(--color-secondary);
-    border-radius: 3px;
-    overflow: hidden;
-
-    &:before {
-      top: -5px;
-      right: -5px;
-      bottom: auto;
-      left: auto;
-      width: 10px;
-      height: 10px;
-      background: var(--color-secondary);
-      border-radius: 50%;
-      opacity: 1;
-      transform: scale(0);
-      transition: all .3s var(--timing-function-default);
-      z-index: -1;
-    }
-
-    &:hover {
-      color: var(--color-accent-1);
-
-      &:before {
-        transform: scale(20);
-      }
-    }
-  }
-
-  .site-nav.is-opaque {
-    background: rgba(var(--color-accent-1), .95);
-  }
-</style>

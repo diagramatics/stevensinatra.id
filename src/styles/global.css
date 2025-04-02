@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 *,
 *::before,
 *::after {
@@ -44,13 +46,5 @@ body {
   background: var(--color-background);
   color: var(--color-text);
   font-family: var(--font-family);
-}
-
-.hidden {
-  display: none;
-}
-
-a:visited {
-  color: currentColor;
 }
 

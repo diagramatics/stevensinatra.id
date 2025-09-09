@@ -1,5 +1,3 @@
-@use "./resume-breakpoints" as *;
-
 :root {
   /* Colors */
   --light-grey: #e1e1e1;
@@ -36,9 +34,9 @@
 }
 
 html {
-  font-size: 62.5%; // This becomes 10px, which will be 16px for body font-size
+  font-size: 62.5%; /* This becomes 10px, which will be 16px for body font-size */
   @media only print {
-    font-size: 7.5pt; // This, for the body font size, will equal to 12pt
+    font-size: 7.5pt; /* This, for the body font size, will equal to 12pt */
   }
 }
 
@@ -66,7 +64,7 @@ h1 {
   line-height: 1.2;
   letter-spacing: -.1rem;
 
-  @media (#{$bp-larger-than-phablet}) {
+  @media (min-width: 550px) {
     font-size: 5rem;
   }
 }
@@ -83,7 +81,7 @@ h3 {
   line-height: 1.3;
   letter-spacing: -.1rem;
 
-  @media (#{$bp-larger-than-phablet}) {
+  @media (min-width: 550px) {
     font-size: var(--h3-font-size);
   }
 }

@@ -1,6 +1,4 @@
 <style lang="scss">
-  @use "../../styles/resume-breakpoints" as *;
-
   .container {
     position: relative;
     width: 100%;
@@ -9,13 +7,13 @@
     padding: 0 20px;
 
     // For devices larger than 400px
-    @media (#{$bp-larger-than-mobile}) {
+    @media (min-width: 400px) {
       width: var(--container-width-larger-than-mobile);
       padding: 0;
     }
 
     // For devices larger than 550px
-    @media (#{$bp-larger-than-phablet}) {
+    @media (min-width: 550px) {
       width: var(--container-width-larger-than-phablet);
     }
 

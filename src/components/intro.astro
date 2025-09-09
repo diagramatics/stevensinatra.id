@@ -1,35 +1,36 @@
 ---
 import Layout from '../layouts/layout.astro';
-import Section from './section.astro';
 import Social from './social.astro';
 ---
 
 <Layout>
-  <Section>
-    <div
-      class="flex items-center justify-center relative min-h-screen text-center text-[var(--color-text)]"
-    >
-      <div class="container flex flex-col items-center">
+  <section class="h-[400px] max-w-5xl p-4 md:px-8 mx-auto flex items-center justify-center text-[var(--color-text)]">
+    <div class="container flex flex-col">
+      <div class="flex items-center gap-8">
+        <img
+          src="/images/me.jpg"
+          alt="Steven Sinatra"
+          class="rounded-full w-[100px] h-[100px] mb-4"
+        />
         <svg
-          class="block max-h-[50px] mx-auto fill-[var(--color-primary)] mb-4"
+          class="block h-[50px] fill-[var(--color-primary)] mb-4"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 326.88 160.8"
         >
           <use xlink:href="#svg-logo"></use>
         </svg>
-        <h1 class="mb-2 tracking-tight text-2xl font-medium">
-          Steven Sinatra
-        </h1>
-        <div class="site-tagline">
-          A front-end engineer, Indonesian and Sydneysider. <br /> Currently leading
-          company wide web performance efforts at <a
-            href="https://www.canva.com"
-            target="_blank"
-            rel="noopener noreferrer">Canva</a
-          >.
-        </div>
-        <Social />
       </div>
+      <h1 class="mb-2 tracking-tight text-4xl font-medium">Steven Sinatra</h1>
+      <div class="text-lg">
+        A front-end engineer, Indonesian and Sydneysider. <br /> Currently at Canva.
+        Previously leading company wide web performance efforts at <a
+          href="https://www.canva.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline">Canva</a
+        >.
+      </div>
+      <Social />
     </div>
-  </Section>
+  </section>
 </Layout>

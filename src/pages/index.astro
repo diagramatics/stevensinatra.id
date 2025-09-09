@@ -3,6 +3,7 @@ import Icons from '../components/icons.astro';
 import Intro from '../components/intro.astro';
 import Nav from '../components/nav.astro';
 import GoogleFont from '../components/google-font.astro';
+import Writings from '../components/writings.astro';
 ---
 
 <!doctype html>
@@ -10,7 +11,7 @@ import GoogleFont from '../components/google-font.astro';
   <head>
     <meta charset="utf-8">
     <title>Steven Sinatra — Front-end Engineer</title>
-    <meta name="description" content="Hello! I'm a front end engineer currently leading Canva's web performance efforts across the company.">
+    <meta name="description" content="Hello! I'm a front end engineer at Canva, previously leading Canva's web performance efforts across the company.">
     <meta name="viewport" content="width=device-width">
     <GoogleFont url="https://fonts.googleapis.com/css?family=Rubik:400,400i,500&display=swap" />
     <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16">
@@ -25,6 +26,12 @@ import GoogleFont from '../components/google-font.astro';
     <Nav />
 
     <Intro />
+
+    <div class="px-16">
+      <hr class="opacity-40 max-w-xl mx-auto" />
+    </div>
+
+    <Writings />
 
     <script src="https://cdn.usefathom.com/script.js" data-site="LCTTVZDP" defer></script>
 </body>

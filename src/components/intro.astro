@@ -4,7 +4,9 @@ import Social from './social.astro';
 ---
 
 <Layout>
-  <section class="h-[400px] max-w-5xl p-4 md:px-8 mx-auto flex items-center justify-center text-[var(--color-text)]">
+  <section
+    class="h-[400px] max-w-5xl p-4 md:px-8 mx-auto flex items-center justify-center text-(--color-text)"
+  >
     <div class="container flex flex-col">
       <div class="flex items-center gap-8">
         <img
@@ -22,13 +24,12 @@ import Social from './social.astro';
       </div>
       <h1 class="mb-2 tracking-tight text-4xl font-medium">Steven Sinatra</h1>
       <div class="text-lg">
-        A front-end engineer, Indonesian and Sydneysider. <br /> Currently at Canva.
-        Previously leading company wide web performance efforts at <a
+        Frontend engineer, Indonesian and Sydneysider. <br /> Currently frontend platform engineering at <a
           href="https://www.canva.com"
           target="_blank"
           rel="noopener noreferrer"
           class="underline">Canva</a
-        >.
+        >. Previously leading company wide web performance efforts as an engineering manager.
       </div>
       <Social />
     </div>

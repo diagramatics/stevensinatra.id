@@ -1,22 +1,21 @@
-<style lang="scss">
+<style>
   .resume-footer {
     margin: 2em 0 2.5em;
     opacity: 0.8;
-    // Using em so footer is a fraction of the global font size
+    /* Using em so footer is a fraction of the global font size */
     font-size: .8em;
     text-align: center;
-    // Prevent page breaks on the footer content
+    /* Prevent page breaks on the footer content */
     page-break-inside: avoid;
-
-    &:hover {
-      opacity: 1;
-    }
-
 
     @media only print {
       margin-bottom: 0;
       opacity: 1;
     }
+  }
+
+  .resume-footer:hover {
+    opacity: 1;
   }
 
   .title {
@@ -30,15 +29,15 @@
   .icons a {
     color: var(--font-color-darker);
     text-decoration: none;
+  }
 
-    &:hover > svg {
-      fill: var(--link-color);
-    }
+  .icons a:hover > svg {
+    fill: var(--link-color);
   }
 
   .icons svg {
-    width: 1.8em; // Using em so it would be relative to the footer font size
-    height: 1.8em; // Using em so it would be relative to the footer font size
+    width: 1.8em; /* Using em so it would be relative to the footer font size */
+    height: 1.8em; /* Using em so it would be relative to the footer font size */
     margin: .6em .2em .2em;
     fill: currentColor;
     transition: all .2s cubic-bezier(.4, 0, .2, 1);

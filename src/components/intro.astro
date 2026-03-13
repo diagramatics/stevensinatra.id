@@ -1,37 +1,35 @@
 ---
-import Layout from '../layouts/layout.astro';
 import Social from './social.astro';
 ---
 
-<Layout>
-  <section
-    class="h-[400px] max-w-5xl p-4 md:px-8 mx-auto flex items-center justify-center text-(--color-text)"
-  >
-    <div class="container flex flex-col">
-      <div class="flex items-center gap-8">
-        <img
-          src="/images/me.jpg"
-          alt="Steven Sinatra"
-          class="rounded-full w-[100px] h-[100px] mb-4"
-        />
-        <svg
-          class="block h-[50px] fill-[var(--color-primary)] mb-4"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 326.88 160.8"
-        >
-          <use xlink:href="#svg-logo"></use>
-        </svg>
-      </div>
-      <h1 class="mb-2 tracking-tight text-4xl font-medium">Steven Sinatra</h1>
-      <div class="text-lg">
-        Frontend engineer, Indonesian and Sydneysider. <br /> Currently frontend platform engineering at <a
-          href="https://www.canva.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="underline">Canva</a
-        >. Previously leading company wide web performance efforts as an engineering manager.
-      </div>
-      <Social />
+<section
+  class="mx-auto flex h-[400px] w-full max-w-5xl items-center justify-center p-4 text-(--color-text) md:px-8"
+>
+  <div class="flex w-full flex-col">
+    <div class="mb-2 flex items-center gap-8">
+      <img
+        src="/images/me.jpg"
+        alt="Steven Sinatra"
+        class="mb-4 h-[100px] w-[100px] rounded-full"
+      />
+      <svg
+        class="mb-4 block h-[50px] fill-[var(--color-primary)]"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 326.88 160.8"
+      >
+        <use xlink:href="#svg-logo"></use>
+      </svg>
     </div>
-  </section>
-</Layout>
+    <h1 class="mb-2 text-4xl font-normal tracking-tight font-sans">Steven Sinatra</h1>
+    <p class="text-lg leading-relaxed">
+      Frontend engineer, Indonesian and Sydneysider. <br /> Currently frontend platform engineering at <a
+        href="https://www.canva.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="underline decoration-from-font underline-offset-2"
+        >Canva</a
+      >. Previously leading company wide web performance efforts as an engineering manager.
+    </p>
+    <Social />
+  </div>
+</section>

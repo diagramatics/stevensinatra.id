@@ -1,26 +1,14 @@
 ---
 const { small = false } = Astro.props;
 ---
-<style lang="scss">
+<style>
   .item-header {
     margin: .6em 0;
-
-    @media (min-width: 550px), only print {
-      display: flex;
-    }
   }
 
-  .main {
-    // Enable grid on bigger sizes than tablet
-    @media (min-width: 550px) {
-      float: left;
-      width: grid-column-width(9);
-    }
-
-    @media (min-width: 550px), only print {
-      float: none; // Override to enable flexbox properly
-      flex: 2;
-      width: auto; // Override to enable flexbox properly
+  @media (min-width: 550px), only print {
+    .item-header {
+      display: flex;
     }
   }
 
@@ -28,17 +16,16 @@ const { small = false } = Astro.props;
     font-family: var(--font-family-sans);
     font-size: var(--h3-font-size-small);
     font-weight: 500;
+  }
 
-    @media (min-width: 550px), only print {
-      float: none; // Override to enable flexbox properly
-      width: auto; // Override to enable flexbox properly
-      margin-left: 1em;
+  @media (min-width: 550px), only print {
+    .main {
+      flex: 2;
     }
 
-    // Enable grid on bigger sizes than tablet
-    @media (min-width: 550px) {
-      float: left;
-      width: grid-column-width(3);
+    .side {
+      flex: 1;
+      margin-left: 1em;
       font-size: var(--h3-font-size);
       text-align: right;
       padding-left: 2em;

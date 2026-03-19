@@ -1,23 +1,36 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
+
 export default defineConfig({
-  // projectRoot: '.',     // Where to resolve all URLs relative to. Useful if you have a monorepo project.
-  // pages: './src/pages', // Path to Astro components, pages, and data
-  // dist: './dist',       // When running `astro build`, path to final static output
-  // public: './public',   // A folder of static files Astro will copy to the root. Useful for favicons, images, and other files that don’t need processing.
-  buildOptions: {
-    site: 'http://stevensinatra.id', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-    sitemap: true, // Generate sitemap (set to "false" to disable)
+  site: 'https://stevensinatra.id',
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: 'Rubik',
+      cssVariable: '--font-rubik',
+      weights: [400, 500],
+      styles: ['normal', 'italic'],
+      subsets: ['latin'],
+      fallbacks: ['system-ui', 'sans-serif'],
+    },
+  ],
+  integrations: [sitemap()],
+  markdown: {
+    syntaxHighlight: 'prism',
   },
-
-  devOptions: {
-    // hostname: 'localhost',  // The hostname to run the dev server on.
-    // port: 3000,             // The port to run the dev server on.
-    // tailwindConfig: '',     // Path to tailwind.config.js if used, e.g. './tailwind.config.js'
+  security: {
+    csp: {
+      directives: [
+        "default-src 'self'",
+        "img-src 'self' data:",
+        "connect-src 'self' https://*.usefathom.com",
+      ],
+      scriptDirective: {
+        resources: ["'self'", 'https://cdn.usefathom.com'],
+      },
+    },
   },
-
-  renderers: [],
-
   vite: {
     plugins: [tailwindcss()],
   },

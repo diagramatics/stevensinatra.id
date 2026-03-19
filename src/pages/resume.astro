@@ -1,7 +1,7 @@
 ---
+import { Font } from 'astro:assets';
 // Component Imports
 import Resume from '../components/resume/resume.astro';
-import GoogleFont from '../components/google-font.astro';
 
 // Component Script:
 // You can write any JavaScript/TypeScript that you'd like here.
@@ -24,10 +24,7 @@ import '../styles/resume.css';
     />
     <meta name="author" content="Steven Sinatra" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <GoogleFont
-      url="https://fonts.googleapis.com/css?family=Rubik:400,400i,500&display=swap"
-    />
-    <meta name="viewport" content="width=device-width" />
+    <Font cssVariable="--font-rubik" preload />
     <title>{title}</title>
     <link
       rel="icon"

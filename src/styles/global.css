@@ -39,8 +39,8 @@
   --z-nav: 10000;
 }
 
-@theme {
-  --font-sans: "Rubik", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+@theme inline {
+  --font-sans: var(--font-rubik);
   --font-family: var(--font-sans);
 }
 

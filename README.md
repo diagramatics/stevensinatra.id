@@ -4,12 +4,12 @@ This is my website codebase.
 
 ## Local setup
 
-Use Node.js 24 and Corepack. The project pins pnpm 12 in `package.json`.
+Use Node.js 24 and pnpm 12.8.1. Both versions are pinned in the repo.
 
 ```sh
-corepack pnpm install --frozen-lockfile
-corepack pnpm run dev
+pnpm install --frozen-lockfile
+pnpm run dev
 ```
 
-Before opening a PR, run `corepack pnpm lint`, `corepack pnpm format:check`,
-`corepack pnpm build`, and `corepack pnpm audit --audit-level high`.
+Before opening a PR, run `pnpm lint`, `pnpm format:check`, `pnpm build`, and
+`pnpm audit --audit-level high`.

@@ -7,19 +7,20 @@
     "start": "astro dev",
     "build": "astro build",
     "lint": "oxlint .",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "format:check": "oxfmt --check ."
   },
   "devDependencies": {
-    "astro": "^7.1.3",
-    "oxfmt": "^0.60.0",
-    "oxlint": "^1.75.0"
+    "astro": "^7.3.5",
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0"
   },
   "engines": {
-    "node": ">=22.12.0"
+    "node": "24.x"
   },
-  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
+  "packageManager": "pnpm@12.8.1",
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/sitemap": "^3.7.4",
     "@tailwindcss/vite": "^4.3.3",
     "tailwindcss": "^4.3.3"
   }
